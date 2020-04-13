@@ -46,7 +46,6 @@ AWS Lambda function for contact forms with Amazon Simple Email Service (SES)
 * Add a `application/json` response mapping template to the POST method:
 
 ```
-# application/json
 {
     "form": $input.json('$')
 }
