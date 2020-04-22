@@ -43,7 +43,7 @@ AWS Lambda function for contact forms with Amazon Simple Email Service (SES)
 * Create a new API.
 * Add a new resource `/send`.
 * Add a POST method to it applying the Lambda function above.
-* Add a `application/json` response mapping template to the POST method:
+* Add a `application/json` request mapping template to the POST method:
 
 ```
 {
@@ -51,7 +51,7 @@ AWS Lambda function for contact forms with Amazon Simple Email Service (SES)
 }
 ```
 
-* Add `Access-Control-Allow-Origin: "*"` to the request header mapping of the POST method.
+* Add `Access-Control-Allow-Origin: "*"` to the response header mapping of the POST method.
 * Deploy the API Gateway.
 
 ### Web Client
